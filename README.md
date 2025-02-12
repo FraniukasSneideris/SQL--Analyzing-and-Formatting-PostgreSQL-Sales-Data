@@ -81,7 +81,6 @@ FROM (SELECT category,
 WHERE product_rank < 6;
 ```
 #### Query result
-```sql
 index | category        | product_name                                         | product_total_sales | product_total_profit | product_rank
 ------+-----------------+-----------------------------------------------------+---------------------+----------------------|--------------
 0     | Furniture       | Hon Executive Leather Armchair, Adjustable          | 58193.48            | 5997.25              | 1
@@ -99,7 +98,7 @@ index | category        | product_name                                         |
 12    | Technology      | Motorola Smart Phone, Full Size                    | 73156.3             | 17027.11             | 3
 13    | Technology      | Nokia Smart Phone, Full Size                       | 71904.56            | 9938.2               | 4
 14    | Technology      | Canon imageCLASS 2200 Advanced Copier              | 61599.82            | 25199.93             | 5
-```
+
 
 ### 2. Imputing Missing Quantities
 The task is to estimate missing quantity values for products where the quantity is unavailable, using the unit price derived from existing sales and discount data.
@@ -128,7 +127,6 @@ USING (product_id)
 WHERE quantity IS NULL;
 ```
 #### Query result
-```sql
 index | product_id          | discount | market | region | sales   | quantity | calculated_quantity
 ------+---------------------+----------+--------+--------+---------+----------+---------------------
 0     | TEC-STA-10003330     | 0        | Africa | Africa | 506.64  | NULL     | 2
@@ -136,7 +134,7 @@ index | product_id          | discount | market | region | sales   | quantity | 
 2     | FUR-BO-10001337      | 0.15     | US     | West   | 308.499 | NULL     | 3
 3     | TEC-STA-10004542     | 0        | Africa | Africa | 160.32  | NULL     | 4
 4     | FUR-ADV-10004395     | 0        | EMEA   | EMEA   | 84.12   | NULL     | 2
-```
+
 ----
 
 
