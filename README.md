@@ -4,11 +4,59 @@
 
 This project involves analyzing and cleaning sales data from a hypothetical Super Store's PostgreSQL database. The focus is on uncovering key insights about the store's product sales, profitability, and order quantities, while handling missing or inconsistent data through SQL-based data cleaning techniques.
 
-## Purpose
+## Introduction
 
-The primary objective of this project is to clean the database and conduct insightful analyses to help the Super Store optimize its sales strategies and inventory management. Key focus areas include:
-1. Identifying the top 5 products from each category based on highest total sales.
-2. Estimating missing quantities in orders based on available sales data.
+This project involves cleaning and analyzing a PostgreSQL database that contains data from a hypothetical Super Store. The database includes several tables that are crucial for our analysis:
+
+### 1. **orders**
+Contains details about each order placed in the store.
+
+| Column       | Definition                                                | Data Type         | Comments                                                   |
+|--------------|-----------------------------------------------------------|-------------------|-----------------------------------------------------------|
+| row_id       | Unique Record ID                                          | INTEGER           |                                                           |
+| order_id     | Identifier for each order in table                        | TEXT              | Connects to order_id in the returned_orders table         |
+| order_date   | Date when order was placed                                | TEXT              |                                                           |
+| market       | Market order_id belongs to                                | TEXT              |                                                           |
+| region       | Region Customer belongs to                                | TEXT              | Connects to region in people table                        |
+| product_id   | Identifier of Product bought                              | TEXT              | Connects to product_id in products table                  |
+| sales        | Total Sales Amount for the Line Item                      | DOUBLE PRECISION  |                                                           |
+| quantity     | Total Quantity for the Line Item                          | DOUBLE PRECISION  |                                                           |
+| discount     | Discount applied for the Line Item                        | DOUBLE PRECISION  |                                                           |
+| profit       | Total Profit earned on the Line Item                       | DOUBLE PRECISION  |                                                           |
+
+### 2. **returned_orders**
+Contains information about returned orders.
+
+| Column       | Definition                                                | Data Type         | Comments                                                   |
+|--------------|-----------------------------------------------------------|-------------------|-----------------------------------------------------------|
+| returned     | Yes values for Order / Line Item Returned                 | TEXT              |                                                           |
+| order_id     | Identifier for each order in table                        | TEXT              |                                                           |
+| market       | Market order_id belongs to                                | TEXT              |                                                           |
+
+### 3. **people**
+Contains details about salespersons.
+
+| Column       | Definition                                                | Data Type         | Comments                                                   |
+|--------------|-----------------------------------------------------------|-------------------|-----------------------------------------------------------|
+| person       | Name of Salesperson credited with Order                   | TEXT              |                                                           |
+| region       | Region Salesperson is operating in                        | TEXT              | Connects to region in orders table                        |
+
+### 4. **products**
+Contains information about products available in the store.
+
+| Column       | Definition                                                | Data Type         | Comments                                                   |
+|--------------|-----------------------------------------------------------|-------------------|-----------------------------------------------------------|
+| product_id   | Unique Identifier for the Product                         | TEXT              |                                                           |
+| category     | Category Product belongs to                                | TEXT              |                                                           |
+| sub_category | Sub Category Product belongs to                            | TEXT              |                                                           |
+| product_name | Detailed Name of the Product                              | TEXT              |                                                           |
+
+These tables are joined together using `product_id` from `products`, `order_id` from `orders`, and `region` from `people` to provide insights into sales and profitability across different categories and regions.
+
+The two key queries in this analysis focus on:
+1. **Finding the top 5 products from each category based on total sales.**
+2. **Imputing missing quantity values for orders by estimating them based on available data and pricing factors.**
+
 
 ----
 
