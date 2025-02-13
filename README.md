@@ -156,6 +156,20 @@ One interest observation is that though the "Hoover Stove, White" is within the 
 ![image](https://github.com/user-attachments/assets/de5e7c3d-5174-4821-a791-e34d255562d6)
 In this nice bubble chart we can see that, even though usually the bigger the sales quantity, the bigger the profit, this is not always the case. Taking a closer look to the graphic we can see that there's actually a lot of sales which product negative profit. I would assume the company noticed this, otherwise they might get into troubles in the future!
 
+----
+
+## Conclusion
+Through SQL-based analysis and data cleaning techniques, this project provided key insights into the Super Store's sales data. 
+
+- **Top Products by Sales:** The analysis of top-selling products per category revealed that executive leather armchairs dominate the furniture segment, while high-end smartphones drive technology sales. However, certain office supply products showed negative profitability despite high sales, highlighting potential pricing or cost inefficiencies.
+  
+- **Handling Missing Quantities:** By estimating missing order quantities using derived unit prices, we improved data completeness and accuracy. This method ensures better inventory tracking and sales performance assessment without distorting existing sales data.
+
+- **Data Visualization Insights:** Observing sales trends, profitability, and market segmentation revealed potential areas for business strategy improvements. The findings suggest optimizing product pricing, discount strategies, and stock management for better profitability.
+
+Overall, this project demonstrated the power of SQL for sales analysis, allowing for data-driven decisions to enhance store performance and operational efficiency.
+
+
 
 
 
