@@ -39,7 +39,7 @@ plt.ylabel('Product Name')
 plt.show()
 
 # Profit vs Sales with Quantity (Bubble Chart)
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(15, 6))
 sns.scatterplot(x='sales', y='profit', data=or_prod, hue='category', size='quantity', sizes=(20, 200), alpha=0.75, palette='magma_r')
 plt.xlabel('Total Sales')
 plt.ylabel('Total Profit')
