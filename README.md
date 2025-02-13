@@ -142,7 +142,19 @@ WHERE quantity IS NULL;
 ### Sales vs. Category by Market and by Region
 ![image](https://github.com/user-attachments/assets/979bc2ff-8ea0-4a3b-b92b-ff95770a4f02)
 ![image](https://github.com/user-attachments/assets/3a3294c4-2156-4ac6-af43-61c9e7ac4f41)
+Working directly with a merge of the "orders" and "products" tables, we can see that the biggest sales took place on Asia-Pacific (APAC) for the categories Technology and Furniture, with similar numbers in sales, reaching over 1.3 million sales. On the flip-side, the lowest sales took place on Canada for Furniture.
 
+Europe, LATAM and the US also exhibit huge sales numbers. On the flip-side, the lowest sales took place on Canada for Furniture.
+
+Moving to the second graphic, we can take a closer look at sales: the winner by far is the Central APAC region for Technology category, with a whopping 1038449 total sales. Both Furniture and Office Supplies also exhibit their highest sales for the Central APAC region. 
+### Top 5 Products by Category 
+![image](https://github.com/user-attachments/assets/f7b102a1-e072-474e-85d9-e04c6e5dcfdd)
+Here we focus on the results of the first assignment: finding out which are the Top 5 Products by Category based on Sales. This visualization takes the data directly for the resulting table of the first query "top_five_products_each_category.csv".
+Though the biggest total sales correspond to the "Apple Smart Phone, Full Size", this product didn't generate the biggest total profit. The biggest total profit goes to the "Canon ImageCLASS 2200 Advanced Capler". As seen before, Technology category has the first place regarding both sales and profit, and it makes sense, since Technology usually is the biggest seller.
+One interest observation is that though the "Hoover Stove, White" is within the Top 5 sold products for the Office Supplies, this product generated negative profit. This might be related to high discounts, high shipping cost, or data entry.
+### Profit vs Sales with Quantity (Bubble Chart)
+![image](https://github.com/user-attachments/assets/de5e7c3d-5174-4821-a791-e34d255562d6)
+In this nice bubble chart we can see that, even though usually the bigger the sales quantity, the bigger the profit, this is not always the case. Taking a closer look to the graphic we can see that there's actually a lot of sales which product negative profit. I would assume the company noticed this, otherwise they might get into troubles in the future!
 
 
 
