@@ -138,5 +138,12 @@ WHERE quantity IS NULL;
 ----
 
 ## Data Visualization and Further Analysis
+*Please note: all visualizations were done with Python Pandas, Seaborn and Matplotlib. The code for graphics is in "data_visualizations.py".*
+### Sales vs. Category by Market and by Region
+![image](https://github.com/user-attachments/assets/979bc2ff-8ea0-4a3b-b92b-ff95770a4f02)
+![image](https://github.com/user-attachments/assets/3a3294c4-2156-4ac6-af43-61c9e7ac4f41)
+
+
+
 
 
