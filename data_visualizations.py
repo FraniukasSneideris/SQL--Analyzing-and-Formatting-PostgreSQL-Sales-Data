@@ -32,13 +32,13 @@ plt.xlabel('Region')
 plt.ylabel('Category')
 plt.show()
 
-# Top 5 Products by Category 
+# Top 5 Products by Category - Bubble Chart
 sns.scatterplot(x='product_total_profit', y='product_name', data=top_five_products_each_category, hue='Category', size='Total Sales', sizes=(20, 200), palette='magma')
 plt.xlabel('Product Total Profit')
 plt.ylabel('Product Name')
 plt.show()
 
-# Profit vs Sales with Quantity (Bubble Chart)
+# Profit vs Sales with Quantity - Bubble Chart
 plt.figure(figsize=(15, 6))
 sns.scatterplot(x='sales', y='profit', data=or_prod, hue='category', size='quantity', sizes=(20, 200), alpha=0.75, palette='magma_r')
 plt.xlabel('Total Sales')
