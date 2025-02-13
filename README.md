@@ -152,9 +152,9 @@ Moving to the second graphic, we can take a closer look at sales: the winner by 
 Here we focus on the results of the first assignment: finding out which are the Top 5 Products by Category based on Sales. This visualization takes the data directly for the resulting table of the first query "top_five_products_each_category.csv".
 Though the biggest total sales correspond to the "Apple Smart Phone, Full Size", this product didn't generate the biggest total profit. The biggest total profit goes to the "Canon ImageCLASS 2200 Advanced Capler". As seen before, Technology category has the first place regarding both sales and profit, and it makes sense, since Technology usually is the biggest seller.
 One interest observation is that though the "Hoover Stove, White" is within the Top 5 sold products for the Office Supplies, this product generated negative profit. This might be related to high discounts, high shipping cost, or data entry.
-### Profit vs Sales with Quantity (Bubble Chart)
+### Profit vs Sales with Quantity 
 ![image](https://github.com/user-attachments/assets/de2810b8-d654-49c8-8c44-28341261e2c4)
-In this nice bubble chart we can see that, even though usually the bigger the sales quantity, the bigger the profit, this is not always the case. Taking a closer look to the graphic we can see that there's actually a lot of sales which product negative profit. I would assume the company noticed this, otherwise they might get into troubles in the future!
+In this chart we can see that, even though usually the bigger the sales quantity, the bigger the profit, this is not always the case. Taking a closer look to the graphic we can see that there's actually a lot of sales which product negative profit. I would assume the company noticed this, otherwise they might get into troubles in the future!
 
 ----
 
